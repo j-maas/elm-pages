@@ -14,7 +14,7 @@ jobs:
           node-version: 14
 
       - run: git config core.autocrlf true
-      - run: npm i elm-review
+      - run: npm i elm-review elm-optimize-level-2
 
       - name: elm-tooling install
         run: npx elm-tooling install
