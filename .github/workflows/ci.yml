@@ -47,5 +47,7 @@ jobs:
         run: npm ci
       - name: elm-tooling install
         run: npx --no-install elm-tooling install
-      - name: Snapshot Tests
-        run: npm run test:snapshot
+      - name: escaping Snapshot Test
+        run: npm run test:snapshot:escaping
+      - name: base-path Snapshot Test
+        run: npm run test:snapshot:base-path
