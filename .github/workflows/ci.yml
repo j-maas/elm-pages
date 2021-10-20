@@ -14,9 +14,7 @@ jobs:
           node-version: 14
 
       - run: git config core.autocrlf true
-      # Re-use ~/.elm between runs until elm.json, elm-tooling.json or
-      # review/elm.json changes. The Elm compiler saves downloaded Elm packages
-      # to ~/.elm, and elm-tooling saves downloaded tool executables there.
+      - run: npm i elm-review
 
       - name: elm-tooling install
         run: npx elm-tooling install
